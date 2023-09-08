@@ -1,0 +1,141 @@
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size:32px;
+color: aliceblue;
+font-weight: bolder;
+      text-align: center;
+  font-weight: inherit;
+}
+button{
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-right: 10px;
+}
+button:hover{
+    transform: scale(1.1); /* Scale up by 10% */
+  background-color: #2980b9; /* Change background color */
+}
+input{
+    width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: aliceblue;
+}
+input:focus{
+    border-color: #3498db;
+    outline: none;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .edit{
+    text-align: center;
+    padding: 10px 20px;
+  }
+.text{
+   font-size: 24px;
+   font-weight: bolder;
+   color: white;
+   padding: 10px 20px;
+}
+/* Navbar styles */
+.navbar {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: black;
+  }
+  
+  .navbar-toggler {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .navbar-toggler span {
+    background-color: white;
+    display: block;
+    height: 3px;
+    margin: 4px 0;
+    width: 25px;
+    transition: 0.4s;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    cursor: pointer;
+    background-color: black;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block;
+    }
+  
+    .navbar-nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #000000;
+      padding: 10px 0;
+      text-align: center;
+    }
+  
+    .navbar-nav.open {
+      display: flex;
+    }
+  
+    .nav-item {
+      padding: 10px 0;
+    }
+  }
+  *{
+    background-color: rgb(105, 105, 105);
+  }
+  .font-semibold{
+    color: white;
+    padding: 10px 20px;
+   
+  }
+  .user{
+    color: rgb(0, 0, 0); 
+    font-weight: bolder;
+    
+  }
